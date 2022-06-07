@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>修改密码</title>
+</head>
+<body>
+  <h1>修改密码</h1>
+  <hr />
+ <form method="post" action="/modify">
+    <fieldset>
+      <table>
+        <tr>
+          <td><label>账号</label></td>
+          <td><input type="text" name="username" value="<%= username %>" disabled /></td>
+        </tr>
+        <tr>
+          <td><label>旧密码</label></td>
+          <td><input type="text" name="password" value="" /></td>
+        </tr>
+		<tr>
+		  <td><label>新密码</label></td>
+		  <td><input type="text" name="new_password" value="" /></td>
+		</tr>
+      </table>
+      <input type="submit" />
+    </fieldset>
+  </form>
+  <!-- <form action="/modify" method="post">
+	
+  	<input type="submit" value=""/> -->
+  </form>
+</body>
+</html>

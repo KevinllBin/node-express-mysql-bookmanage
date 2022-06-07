@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>图书管理系统</title>
+<link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/heightlength.css">
+<link rel="stylesheet" href="/css/mxjs.css">
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="jsbg">
+    <div class="col-lg-12 mxlength">
+      <div class="mx-1"> 
+  <h1 style="text-align: center">图书列表</h1>
+  <br/>
+  <table width="100%">
+    <tr>
+      <th>ID</th>
+      <th>书名</th>
+      <th>作者</th>
+      <th>出版社</th>
+      <th>删除</th>
+      <th>编辑</th>
+    </tr>
+    <%data.forEach(function (item, index) { %>
+    <tr>
+      <td><%= item.book_id %></td>
+      <td><%= item.book_name %></td>
+      <td><%= item.book_author %></td>
+      <td><%= item.book_pub %></td>
+      <td><a href="/delete/<%= item.book_id %>">删除</a></td>
+      <td><a href="/edit/<%= item.book_id %>">编辑</a></td>
+    </tr>
+    <% }); %>
+  </table>
+	  </div>
+    </div>
+  </div>	
+</div>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script> 
+<script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script> 
+<script src="/js/smoothscroll.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="/js/mking.js"></script>
+</body>
+</html>
