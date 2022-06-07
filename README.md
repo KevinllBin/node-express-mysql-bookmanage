@@ -1,7 +1,10 @@
-# node-express-mysql-
+# node-express-mysql-bookmanage
 manage u book
-How to use?
+## How to use?
 import sql file
-edit conn
+edit connection file(conn)
+### START
 command:npm install
 command:npm start
+Visit in your browser at: http://localhost:300
+or here [toucheme](127.0.0.1:3000)
