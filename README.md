@@ -6,5 +6,5 @@ edit connection file(conn)
 ### START
 command:npm install
 command:npm start
-Visit in your browser at: http://localhost:300
-or here [toucheme](127.0.0.1:3000)
+Visit in your browser at: http://localhost:3000
+[toucheme](127.0.0.1:3000)
