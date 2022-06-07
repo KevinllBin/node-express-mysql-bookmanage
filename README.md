@@ -1,8 +1,7 @@
 # node-express-mysql-bookmanage
 manage u book
 ## How to use?
-*import sql file 1
-*edit connection file(conn)2
+import sql file edit connection file(conn)
 ### START
 **command:npm install**
 **command:npm start**
